@@ -1,0 +1,33 @@
+{
+  "name": "calendar-parser",
+  "private": true,
+  "version": "1.0.0",
+  "description": ".csv calendar event parser and .ics generator.",
+  "dependencies": {
+    "ics": "^2.0.1",
+    "moment": "^2.19.4"
+  },
+  "main": "src/icsCalendarParser.js",
+  "scripts": {
+    "start": "node src/icsCalendarParser",
+    "test": "npm run csvtest",
+    "csvtest": "node src/icsCalendarParser test/US2020Holidays-acme.csv test/US2020Holidays.ics 2020 'ACME US'",
+    "vbstest": "node src/icsCalendarParser test/US2021Holidays-acme.vbs test/US2021Holidays.ics 2021 'ACME US' true objDict.Add"
+  },
+  "keywords": [
+    "ics",
+    "csv",
+    "iCal",
+    "vbs",
+    "parser",
+    "generator",
+    "Microsoft",
+    "Outlook",
+    "Google",
+    "calendar",
+    "holiday",
+    "events"
+  ],
+  "author": "StephenFooBar",
+  "license": "ISC"
+}
